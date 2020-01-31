@@ -13,7 +13,7 @@ app.config.from_object('config')
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    response = ""
+    response = "[{}]".format(app.config['GOO_API']['KEY'])
 
     if "submit" in request.form:
         response = request.form['text']
