@@ -17,12 +17,12 @@ app.config.from_object('config')
 def index():
     """ Index View"""
 
-    #catch posted data from form
+    # catch posted data from form
     if "submit" in request.form:
         address = str(request.form['query'])
         api_response = pprint.pformat(goo_geocode(address))
     else:
-        #default response
+        # default response
         api_response = "... empty response... "
 
     return render_template(
