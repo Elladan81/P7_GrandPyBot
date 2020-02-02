@@ -5,7 +5,9 @@
 Author : Mickael Lalevée
 version 0.1
 """
+import pprint
 from flask import Flask, request, render_template
+from apicall import goo_geocode
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -13,16 +15,21 @@ app.config.from_object('config')
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    response = "[{}]".format(app.config['GOO_API']['KEY'])
+    """ Index View"""
 
+    #catch posted data from form
     if "submit" in request.form:
-        response = request.form['text']
+        address = str(request.form['query'])
+        api_response = pprint.pformat(goo_geocode(address))
+    else:
+        #default response
+        api_response = "... empty response... "
 
     return render_template(
         "index.html",
         name=app.config['APP']['NAME'],
         url=app.config['APP']['SRC'],
-        response=response,
+        raw_response=api_response,
     )
 
 
