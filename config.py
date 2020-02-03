@@ -3,7 +3,7 @@
 
 import os
 
-PORT = 1664
+PORT = 5000
 HOST = 'localhost'
 APP = {
     'NAME': 'GrandPyBot',

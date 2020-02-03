@@ -9,14 +9,17 @@
     <h1>{{ name }}</h1>
     <p>My little Flask App</p>
     <form method="post">
+        <form method="post">
         <select name="query">
-            <option value="">...choisissez :</option>
-            <option value="openclassrooms">openclassrooms</option>
-        </select>
+            <option value="">… choose _</option>
+            <option value="open classrooms">open classrooms</option>
+            <option value="basilique fourvière">basilique fourvière</option>
+            <option value="maison des têtes">maison des têtes</option>
+        </select>	        </select>
         <input type="submit" name="submit" value="Send">
     </form>
     <p><pre>{{raw response}}</pre></p>
-    <p>Map in progress</p>
+    <p><img src="{{ map url}}"/></p>
     <p>Find my project on <a href="{{url}}">My Github</a> </p>
 </body>
 </html>

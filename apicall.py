@@ -3,7 +3,8 @@ import requests
 from config import GOO_API
 
 
-def goo_geocode(query="openclassrooms", country='FR'):
+def goo_geocode(query="open classrooms", country='FR'):
+    """ function documentation"""
     payload = {
         'key': GOO_API['KEY'],
         'address': query,
@@ -19,6 +20,7 @@ def goo_geocode(query="openclassrooms", country='FR'):
         print('API response status : {}'.format(api_status))
 
     return api_json
+
 
 def goo_static(center="7 Cité Paradis, 75010 Paris, France", size=(600, 300)):
     """ return url of a static maps using Google Static Maps API """
