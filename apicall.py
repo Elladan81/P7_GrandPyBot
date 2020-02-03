@@ -20,7 +20,6 @@ def goo_geocode(query="openclassrooms", country='FR'):
 
     return api_json
 
-
 def goo_static(center="7 Cité Paradis, 75010 Paris, France", size=(600, 300)):
     """ return url of a static maps using Google Static Maps API """
 
