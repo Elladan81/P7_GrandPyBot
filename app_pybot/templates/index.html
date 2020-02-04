@@ -1,25 +1,92 @@
 <!doctype html>
-<html lang='fr'>
-
-<head>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>{{ name }}</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <title>GrandPyBot</title>
+
+  <link rel="icon" type="" href="" />
+
+ </head>
+
+
 <body>
-    <h1>{{ name }}</h1>
-    <p>My little Flask App</p>
-    <form method="post">
-        <form method="post">
-        <select name="query">
-            <option value="">… choose _</option>
-            <option value="open classrooms">open classrooms</option>
-            <option value="basilique fourvière">basilique fourvière</option>
-            <option value="maison des têtes">maison des têtes</option>
-        </select>
-        <input type="submit" name="submit" value="Send">
-    </form>
-    <p><pre>{{raw response}}</pre></p>
-    <p><img src="{{ map url}}"/></p>
-    <p>Find my project on <a href="{{url}}">My Github</a> </p>
+
+  <div class="container-fluid">
+
+  <!-- /// HEADER : Logo, Title and Headline /// -->
+    <header class="row text-center">
+
+      <!-- Logo -->
+      <a href="/index">
+        <div id="logo"></div>
+      </a>
+
+      <!-- Title and Headline -->
+      <div class="container-fluid bg-light">
+        <h1 id="title" class="text-center">
+          <span>GrandPyBot</span>
+        </h1>
+        <h2 id="headline">
+          GrandPyBot, le vieux robot qui sait tout. Enfin presque.
+        </h2>
+      </div>
+
+    </header>
+
+    <!-- /// CHAT ZONE -->
+    <div id="content">
+
+      <!-- // Robby image zone // -->
+      <aside></aside>
+
+      <!-- // Chat window and Input zone // -->
+      <section id="chatzone" class="container-fluid">
+
+        <!-- Chat window -->
+        <div id="chatwindow" class="container-fluid">
+          <div id ="chatstart" class="robby">
+            <h3>Que veux tu savoir ?</h3>
+          </div>
+        </div>
+
+        <!-- Input zone -->
+              <div id="chatform" class="form-inline bg-light">
+                <input id="user_query" class="form-control mr-sm-2"
+                         type="text" size = 48
+                         placeholder="Dis-moi GrandPy, ..." autofocus>
+                  <button id="submit" class="btn btn-sm btn-outline-secondary"
+                          type="submit" value="Valider">Valider</button>
+              </div>
+      </section>
+
+      <!-- // User image zone // -->
+      <aside class="hidden-xs col-sm-1 col-md-2 col-lg-3"></aside>
+
+    </div>
+
+    <!-- /// FOOTER /// -->
+    <footer class="row">
+      <div class="col">
+        <p>Code by Mickael Lalevée. Source code on <a href="https://github.com/Elladan81/P7_GrandPyBot">GitHub</a></p>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={{ key }}">
+  </script>
+  <script type="text/javascript" src="../static/js/display.js"></script>
+  <script type="text/javascript" src="../static/js/ajax.js"></script>
+
 </body>
+
 </html>
