@@ -28,7 +28,7 @@ function userValidated(userQuery)
 }
 
 function ajaxPost(url, data, callback)
-// Display gif loader, prepare and send ajax 'POST' request
+// prepare and send ajax 'POST' request
 {
     var req = new XMLHttpRequest();
     req.open('POST', url);
@@ -46,18 +46,18 @@ function ajaxPost(url, data, callback)
 }
 
 function responseTreatment(data)
-// Get AJAX response, remove gif loader and display GrandPyBot answer
+// Get AJAX response and display GrandPyBot answer
 {
     var data = JSON.parse(data);
     console.log("Le serveur Python a renvoyé :", data); // FOR DEBUG
 
     if (data !== "") {
-        displayGrandPyBot("Ho, voici ce que j'ai trouvé pour toi :")
+        displayGrandPyBot("Ho, voici ce que j'ai trouvé pour toi :");
         initMap(data['coord']);
         if (data['extract'] !== "") {
-            displayRobby(data['extract']);
+            displayGrandPyBot(data['extract']);
         }
     } else {
-        displayPapyBot("Désolé mon p'tit gars, je n'ai rien trouvé...")
+        displayGrandPyBot("Désolé mon p'tit gars, je n'ai rien trouvé...");
     }
 }
