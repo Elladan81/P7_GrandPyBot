@@ -23,6 +23,10 @@ html {
   margin-left: auto;
 }
 
+.content-inside {
+  height : 100vh-70px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
