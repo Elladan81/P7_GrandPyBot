@@ -46,18 +46,57 @@ function ajaxPost(url, data, callback)
 }
 
 function responseTreatment(data)
-// Get AJAX response and display GrandPyBot answer
+// Get AJAX response and display GrandPyBot random answer + google map
 {
     var data = JSON.parse(data);
     console.log("Le serveur Python a renvoyé :", data); // FOR DEBUG
 
     if (data !== "") {
-        displayGrandPyBot("Ho, voici ce que j'ai trouvé pour toi :");
+        displayGrandPyBot(GrandPyBotRandomAnswer());
         initMap(data['coord']);
         if (data['extract'] !== "") {
             displayGrandPyBot(data['extract']);
+            displayGrandPyBot(GrandPyBotRandomContinue());
         }
     } else {
-        displayGrandPyBot("Désolé mon p'tit gars, je n'ai rien trouvé...");
+        displayGrandPyBot(GrandPyBotRandomDontUnderstand());
     }
+}
+
+
+function GrandPyBotRandomAnswer() {
+    var possibleAnswer = [
+    "Qu'est ce que je peux te dire sur cet endroit... Humm... Ha oui !",
+    "Je pense avoir trouvé ce que tu cherches...",
+    "Je me rappelle d'une petite chose à propos de cet endroit...",
+    ""
+    ];
+    var grandPyBotAnswer = possibleAnswer[Math.floor(Math.random()*possibleAnswer.length)];
+    console.log("Le serveur à choisi"+ grandPyBotAnswer ); // for Debug
+    return grandPyBotAnswer;
+}
+
+function GrandPyBotRandomDontUnderstand() {
+    var dontUnderstandRandomAnswer = [
+    "Je dois avoir la mémoire qui flanche, ça ne me dit rien...",
+    "Peux-tu m'en dire plus ?",
+    "Je n'ai rien compris... Tape plus fort sur ton clavier !",
+    "Aucune idée... Je devrais reprendre plus de pilules de grenouilles séchées."
+    ];
+    var dontUnderstandAnswer = dontUnderstandRandomAnswer[Math.floor(Math.random()*dontUnderstandRandomAnswer.length)];
+    console.log("Le serveur à choisi"+ dontUnderstandAnswer ); // for Debug
+    return dontUnderstandAnswer;
+}
+
+function GrandPyBotRandomContinue () {
+    var possibleContinueAnswer = [
+    "Je peux faire autre chose pour toi ?",
+    "Je peux te parler de quelque chose d'autre ?",
+    "Tu as une autre question ?",
+    "Encore autre chose ?",
+    "Oui ? Il va pleuvoir demain...",
+    ];
+    var currentContinueAnswer = possibleContinueAnswer[Math.floor(Math.random()*possibleContinueAnswer.length)];
+    console.log("Le serveur à choisi"+ possibleContinueAnswer ); // For debug
+    return currentContinueAnswer;
 }

@@ -27,7 +27,7 @@ function initMap(coord)
     mapZone.style.display = 'block';
     chatWindow.appendChild(mapZone);
     var map = new google.maps.Map(mapZone, {
-        zoom: 8,
+        zoom: 16,
         center: coord,
         });
         var marker = new google.maps.Marker({
