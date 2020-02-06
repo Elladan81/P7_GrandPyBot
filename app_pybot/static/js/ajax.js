@@ -99,6 +99,6 @@ function GrandPyBotRandomContinue () {
     "Oui ? Il va pleuvoir demain... Autre chose ?",
     ];
     var currentContinueAnswer = possibleContinueAnswer[Math.floor(Math.random()*possibleContinueAnswer.length)];
-    console.log("Le serveur à choisi"+ possibleContinueAnswer ); // For debug
+    console.log("Le serveur à choisi :" + currentContinueAnswer ); // For debug
     return currentContinueAnswer;
 }
