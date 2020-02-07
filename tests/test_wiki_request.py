@@ -48,6 +48,5 @@ est un restaurant parisien situé au deuxième étage de la Tour Eiffel \
 et spécialisé en cuisine française classique."""
 '''
 
-
 if __name__ == "__main__":
     pass

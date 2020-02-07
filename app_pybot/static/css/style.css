@@ -19,6 +19,12 @@ html, body {
     height: 250px;
     margin: auto;
 }
+#logo {
+    background-image: url("../img/grandpybot_hello-01.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 120px;
+}
 
 #chatwindow {
     margin: 20px;

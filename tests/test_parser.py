@@ -10,6 +10,7 @@ from app_pybot.request_tools.parser import Parser
 class TestParser:
     """This class test GrandPy Bot Parser
     """
+
     def setup(self):
         self.ps = Parser()
 
@@ -29,14 +30,14 @@ class TestParser:
         """
         assert self.ps.clean(
             "Situe Maisons-Laffitte"
-            ) == "situe maisons-laffitte"
+        ) == "situe maisons-laffitte"
 
     def test_clean_stopwords(self):
         """Test the parser with a basic user request
         """
         assert self.ps.clean(
             "Dis-moi GrandPyBot, où se trouve la tour Eiffel ?"
-            ) == "grandpybot trouve tour eiffel"
+        ) == "grandpybot trouve tour eiffel"
 
 
 if __name__ == "__main__":

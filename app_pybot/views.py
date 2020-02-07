@@ -34,13 +34,16 @@ def ajax_request():
     gmaps_request = GMapsRequest(cleaned_query)
     coord = gmaps_request.get_coord()
     print("Coordonnées GMaps =", coord)  # FOR DEBUG
+    formatted_address = gmaps_request.get_address()
+    print("Formatted address =", formatted_address)
 
-    if coord:
+    if coord and formatted_address:
         wiki_request = WikiRequest(coord['lat'], coord['lng'])
         extract = wiki_request.get_extract()
         if extract:
             response = {'coord': {'lat': coord['lat'], 'lng': coord['lng']},
-                        'extract': extract
+                        'extract': extract,
+                        'formatted_address': formatted_address,
                         }
         else:
             response = {'coord': {'lat': coord['lat'], 'lng': coord['lng']},

@@ -6,7 +6,7 @@ class WikiRequest:
     """
     BASE_PAGEID = "https://fr.wikipedia.org/w/api.php?" \
                   + "action=query&prop=extracts&" \
-                  + "list=geosearch&gscoord={}|{}&gsradius=10000&" \
+                  + "list=geosearch&gscoord={}|{}&gsradius=500&" \
                   + "gslimit=1&format=json"
 
     BASE_EXTRACT = "https://fr.wikipedia.org/w/api.php?" \
