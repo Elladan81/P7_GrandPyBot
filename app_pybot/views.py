@@ -37,13 +37,12 @@ def ajax_request():
     formatted_address = gmaps_request.get_address()
     print("Formatted address =", formatted_address)
 
-    if coord and formatted_address:
+    if coord:
         wiki_request = WikiRequest(coord['lat'], coord['lng'])
         extract = wiki_request.get_extract()
         if extract:
             response = {'coord': {'lat': coord['lat'], 'lng': coord['lng']},
                         'extract': extract,
-                        'formatted_address': formatted_address,
                         }
         else:
             response = {'coord': {'lat': coord['lat'], 'lng': coord['lng']},
@@ -52,6 +51,12 @@ def ajax_request():
         print(" >>>", extract)  # FOR DEBUG
     else:
         response = ""
+
+    if formatted_address:
+        response['formatted_address'] = formatted_address
+    else:
+        pass
+
     print("RESPONSE >>>", response)  # FOR DEBUG
 
     return jsonify(response)

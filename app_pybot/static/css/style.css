@@ -30,6 +30,14 @@ html, body {
     margin: 20px;
     text-align: justify;
 }
+#ajax_loader, .ajax-loader {
+    display: block;
+    max-width : 100px;
+    height: auto;
+    margin_left: auto;
+    margin-right: auto;
+}
+
 
 .user {
   text-align: right;
