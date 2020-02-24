@@ -54,7 +54,7 @@ function responseTreatment(data)
     removeLoader();
 
     if (data !== "") {
-        displayGrandPyBot("Je peux déjà te dire que c'est à cette adresse : " + data['formatted_address'])
+        displayGrandPyBot(GrandPyBotEureka() + data['formatted_address'])
         initMap(data['coord']);
         if (data['extract'] !== "") {
             displayGrandPyBot(GrandPyBotRandomAnswer() + data['extract']);

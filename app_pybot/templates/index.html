@@ -24,72 +24,75 @@
 
 <div class="container">
 
-
     <!-- /// HEADER : Logo, Title and Headline /// -->
-    <header class="row">
-
+    <header class="header">
+        <div class="row">
         <!-- Title and Headline -->
-        <div class="container-fluid bg-light">
-            <!-- Logo -->
-            <img class="logo" src="../static/img/grandpybot_hello-01.jpg">
-            <div class="text-center">
-                <h1 id="title">
-                    <span>GrandPyBot</span>
-                </h1>
-                <h3 id="headline">
-                    GrandPyBot, le vieux robot qui sait tout. Enfin presque.
-                </h3>
+            <div class="container-fluid">
+                <div class="text-center">
+                    <h1 id="title">
+                        <span class="align-middle"><strong>GrandPyBot</strong></span>
+                    </h1>
+                </div>
             </div>
         </div>
-
     </header>
 
-    <div class="content-inside">
-
-        <!-- /// CHAT ZONE -->
-        <div id="content" class="row">
-
-            <!-- // Chat window and Input zone // -->
-            <section id="chatzone" class="container-fluid">
-
-                <!-- Chat window -->
-                <div id="chatwindow">
-                    <div id="chatstart" class="GrandPyBot">
-                        <img src="../static/img/grandpybot_storytelling-01.jpg"
-                             class="GrandPyBot-img">
-                        <h4>GrandPyBot :</h4>
-                        <p> Bonjour ! Approche toi ! Si tu as des questions sur
-                            un lieu, c'est ici ! <br/>J'espère avoir l'occasion
-                            de te raconter quelques anecdotes ! Haha !</p>
-                    </div>
-                </div>
-
-                <!-- Input zone -->
-                <div id="chatform">
-                    <p>
-                        <input id="user_query" class="col-sm-9 col-xs-8"
-                               type="text" size=48
-                               placeholder="Ex :Dis-moi GrandPyBot, où se situe la tour Effeil ?"
-                               autofocus>
-                        <input id="submit"
-                               class="col-xs-offset-1 col-sm-2 col-xs-3"
-                               type="button" value="Valider">
-                    </p>
-                </div>
-            </section>
+    <section class="explanation">
+        <div class="row">
+            <div class="container-fluid text-center">
+                <h3 id="headline">GrandPyBot, le vieux robot qui sait tout.</h3>
+                <h4>Enfin presque...</h4>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <section id="grandpybot-chat">
+        <div class="content-inside">
+
+            <!-- /// CHAT ZONE -->
+            <div id="content" class="row">
+
+                <!-- // Chat window and Input zone // -->
+                <section id="chatzone" class="container-fluid">
+
+                    <!-- Chat window -->
+                    <div id="chatwindow">
+                        <div id="chatstart" class="GrandPyBot">
+                            <img src="../static/img/grandpybot_storytelling-01.jpg"
+                                 class="GrandPyBot-img">
+                            <h4>GrandPyBot :</h4>
+                            <p> Bonjour ! Approche toi ! Si tu as des questions
+                                sur
+                                un lieu, c'est ici ! <br/>J'espère avoir
+                                l'occasion
+                                de te raconter quelques anecdotes ! Haha !</p>
+                        </div>
+                    </div>
+
+                    <!-- Input zone -->
+                    <div id="chatform">
+                            <input id="user_query" class="col-sm-9 col-xs-8"
+                                   type="text" size=48
+                                   placeholder="Ex :Dis-moi GrandPyBot, où se situe la tour Effeil ?"
+                                   autofocus>
+                            <input id="submit"
+                                   class="col-xs-offset-1 col-sm-2 col-xs-3"
+                                   type="button" value="Valider">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
     <!-- /// FOOTER /// -->
     <footer class="footer">
         <div class="row">
-            <div class="container fluid bg-light">
+            <div class="container-fluid">
                 <p class="text-center">Code by Mickaël Lalevée. Source code on
                     <a href="https://github.com/Elladan81/P7_GrandPyBot">GitHub</a>
                 </p>
             </div>
         </div>
-
     </footer>
 
 

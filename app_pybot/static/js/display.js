@@ -106,6 +106,18 @@ function GrandPyBotRandomContinue () { //GrandPyBot random answer when a request
     ];
 
     var currentContinueAnswer = possibleContinueAnswer[Math.floor(Math.random()*possibleContinueAnswer.length)];
-    console.log("Le serveur à choisi :" + currentContinueAnswer ); // For debug
+    console.log("Le serveur à choisi : " + currentContinueAnswer ); // For debug
     return currentContinueAnswer;
+}
+
+function GrandPyBotEureka () {
+
+    var possibleEureka = [
+    "Je peux déjà te dire que c'est à cette adresse : ",
+    "Je pense avoir trouvé ce que tu cherches, regarde : ",
+    "Je dirais que c'est à cet endroit : ",
+    ];
+    var currentEureka = possibleEureka[Math.floor(Math.random()*possibleEureka.length)];
+    console.log("Le serveur à choisi : " + currentEureka ); // For debug
+    return currentEureka;
 }
