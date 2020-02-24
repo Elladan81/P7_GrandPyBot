@@ -5,8 +5,8 @@ function displayLoader()
     var loaderZone = document.createElement('div');
     loaderZone.setAttribute('id', 'ajax-loader');
     var loader = document.createElement('img');
-    loader.setAttribute('src', '../static/img/grand_py_bot_thinking-01.jpg');
-    loader.setAttribute('alt', "Ajax loader");
+    loader.setAttribute('src', '../static/img/straight-loader.gif');
+    loader.setAttribute('alt', "ajax-loader");
     loaderZone.appendChild(loader);
     chatWindow.appendChild(loaderZone);
 }
@@ -24,8 +24,12 @@ function displayUser(speech)
     var chatWindow = document.getElementById('chatwindow');
     var speechZone = document.createElement('div');
     speechZone.classList.add('user');
+    var userImg = document.createElement('img');
+    userImg.setAttribute('src', '../static/img/user-img-01.jpg');
+    userImg.classList.add('user-img');
     speechZone.textContent = speech;
     chatWindow.appendChild(speechZone);
+    speechZone.insertAdjacentElement('afterbegin', userImg);
 }
 
 function displayGrandPyBot(speech)
@@ -34,8 +38,12 @@ function displayGrandPyBot(speech)
     var chatWindow = document.getElementById('chatwindow');
     var speechZone = document.createElement('div');
     speechZone.classList.add('GrandPyBot');
+    var grandPyBotImg = document.createElement('img');
+    grandPyBotImg.setAttribute('src', '../static/img/grandpybot_storytelling-01.jpg');
+    grandPyBotImg.classList.add('GrandPyBot-img');
     speechZone.textContent = speech;
     chatWindow.appendChild(speechZone);
+    speechZone.insertAdjacentElement('afterbegin', grandPyBotImg);
 }
 
 function initMap(coord)
@@ -68,7 +76,7 @@ function GrandPyBotRandomAnswer() { // GrandpyBot answer when the request is ok
     ];
 
     var grandPyBotAnswer = possibleAnswer[Math.floor(Math.random()*possibleAnswer.length)];
-    console.log("Le serveur à choisi"+ grandPyBotAnswer ); // for Debug
+    console.log("Le serveur à choisi : "+ grandPyBotAnswer ); // for Debug
     return grandPyBotAnswer;
 }
 
@@ -83,7 +91,7 @@ function GrandPyBotRandomDontUnderstand() { //GrandPyBot answer when no result i
     ];
 
     var dontUnderstandAnswer = dontUnderstandRandomAnswer[Math.floor(Math.random()*dontUnderstandRandomAnswer.length)];
-    console.log("Le serveur à choisi"+ dontUnderstandAnswer ); // for Debug
+    console.log("Le serveur à choisi : "+ dontUnderstandAnswer ); // for Debug
     return dontUnderstandAnswer;
 }
 

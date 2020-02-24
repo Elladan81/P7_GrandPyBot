@@ -38,6 +38,7 @@ def ajax_request():
     print("Formatted address =", formatted_address)
 
     if coord:
+        # to refactor
         wiki_request = WikiRequest(coord['lat'], coord['lng'])
         extract = wiki_request.get_extract()
         if extract:
