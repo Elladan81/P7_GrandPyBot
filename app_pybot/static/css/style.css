@@ -20,7 +20,7 @@ html, body {
 }
 
 .explanation {
-    height: 100px;
+    height: 160px;
     text-align: center;
     margin-top: 50px;
 }
@@ -36,7 +36,7 @@ html, body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #b3b3b3;
+  background-color: #fff;
   color: black;
   text-align: center;
 }

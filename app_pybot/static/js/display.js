@@ -69,7 +69,7 @@ function GrandPyBotRandomAnswer() { // GrandpyBot answer when the request is ok
 
     var possibleAnswer = [ //add new answer here
     "Qu'est ce que je peux te dire sur cet endroit... Humm... Ha oui ! ",
-    "Je pense avoir trouvé ce que tu cherches... Tiens, tu savais ça ? ",
+    "Maintenant que j'ai trouvé ce que tu cherchais, ça me rappelle quelque chose. Ha oui, écoute : ",
     "Je me rappelle d'une petite chose à propos de cet endroit... ",
     "Un jour je me suis perdu dans ce coin... Ho, j'ai une anecdote à ce propos. ",
     "C'est assez proche de l'université où je travaille. Tu ne l'as jamais vu ? C'est normal. Haha ! Par contre savais-tu ceci ? ",
@@ -88,6 +88,7 @@ function GrandPyBotRandomDontUnderstand() { //GrandPyBot answer when no result i
     "Je n'ai rien compris... Tape plus fort sur ton clavier ! ",
     "Aucune idée... Je devrais reprendre des pilules de grenouilles séchées.",
     "Oook. Hmmmm ? Ho, pardon. Je te dis que... je n'ai rien compris.",
+    "Qui me parle ? Hmmmmmm.... Rrrrrrr...zzzzzzz. Hmmm ? Oui ? Quoi ? ",
     ];
 
     var dontUnderstandAnswer = dontUnderstandRandomAnswer[Math.floor(Math.random()*dontUnderstandRandomAnswer.length)];
