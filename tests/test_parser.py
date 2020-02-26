@@ -2,8 +2,6 @@
 # coding: utf-8
 
 
-import pytest
-
 from app_pybot.request_tools.parser import Parser
 
 

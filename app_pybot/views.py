@@ -2,10 +2,10 @@ from flask import jsonify, render_template, request
 
 from app_pybot import app
 from app_pybot.forms import ChatForm
-from .request_tools.parser import Parser
-from .request_tools.google_request import GMapsRequest
-from .request_tools.wiki_request import WikiRequest
 from .request_tools.apikey import GOO_API_KEY
+from .request_tools.google_request import GMapsRequest
+from .request_tools.parser import Parser
+from .request_tools.wiki_request import WikiRequest
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -61,3 +61,4 @@ def ajax_request():
     print("RESPONSE >>>", response)  # FOR DEBUG
 
     return jsonify(response)
+
