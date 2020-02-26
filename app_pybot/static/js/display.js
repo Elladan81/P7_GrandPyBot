@@ -7,8 +7,8 @@ function displayLoader()
     var loader = document.createElement('img');
     loader.setAttribute('src', '../static/img/straight-loader.gif');
     loader.setAttribute('alt', "ajax-loader");
-    loaderZone.appendChild(loader);
     chatWindow.appendChild(loaderZone);
+    loaderZone.insertAdjacentElement('afterbegin', loader)
 }
 
 function removeLoader()
