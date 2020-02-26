@@ -12,7 +12,7 @@ class WikiRequest:
     BASE_EXTRACT = "https://fr.wikipedia.org/w/api.php?" \
                    + "action=query&pageids={}&prop=extracts&" \
                    + "explaintext=true&exsectionformat=plain&" \
-                   + "exsentences=1&format=json"
+                   + "exsentences=3&format=json"
 
     def __init__(self, latitude, longitude):
         """Takes coordinates to build the url to request

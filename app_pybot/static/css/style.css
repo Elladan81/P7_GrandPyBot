@@ -1,13 +1,18 @@
 html, body {
     height: 100%;
     margin: 0;
+    scroll-method: smooth;
 }
 
 .header {
-    height: 10vh;
-    background-color: #464646;
+    height: 8vh;
+    background-color: #0A5698;
     color:#fff;
     width: 100%;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    padding-left : 50px;
 }
 
 .logo {
@@ -26,9 +31,8 @@ html, body {
 }
 
 .content-inside {
-    min-height: 90vh;
     margin: auto;
-    padding-bottom: 50px;
+    margin-bottom : 50px;
 }
 
 .footer {
@@ -43,7 +47,10 @@ html, body {
 
 
 /*chat zone*/
-
+.user_query {
+    width: 75%;
+    height: 50px;
+}
 .map {
     width: 75%;
     height: 250px;
@@ -69,10 +76,9 @@ html, body {
   color:#fff;
   background:#075698; /* default background for browsers without gradient support */
   border-radius:10px;
-  margin-left:30px;
   background:#075698;
   top:16px;
-  right:-40px; /* value = - border-left-width - border-right-width */
+  right:-30px; /* value = - border-left-width - border-right-width */
   bottom:auto;
   left:auto;
   border-width:15px 0 0 40px; /* vary these values to change the angle of the vertex */
@@ -88,10 +94,9 @@ html, body {
   color:#fff;
   background:#075698; /* default background for browsers without gradient support */
   border-radius:10px;
-  margin-right:30px;
   background:#075698;
   top:16px;
-  left:-40px; /* value = - border-left-width - border-right-width */
+  left:-30px; /* value = - border-left-width - border-right-width */
   bottom:auto;
   border-width:15px 40px 0 0; /* vary these values to change the angle of the vertex */
   border-color:transparent #075698;
@@ -106,8 +111,7 @@ img {
     width : 40px;
     margin-left: 1%;
     margin-right: 3%;
-    margin-top: 1%;
-    margin-bottom: 12px;
+    margin-bottom: 50px;
     float: left;
 }
 

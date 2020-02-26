@@ -64,6 +64,9 @@ function initMap(coord)
         });
       }
 
+function scrollTo(hash) {
+    location.hash = "#chatform";
+}
 
 function GrandPyBotRandomAnswer() { // GrandpyBot answer when the request is ok
 
@@ -100,9 +103,9 @@ function GrandPyBotRandomContinue () { //GrandPyBot random answer when a request
 
     var possibleContinueAnswer = [ //add new answer here
     "Je peux faire autre chose pour toi ? ",
-    "Je peux te parler de quelque chose d'autre ? ",
+    "Je peux te parler d'autre chose ? ",
     "Tu as une autre question ? ",
-    "Encore autre chose ? ",
+    "Autre chose ? Allez, dis moi ! ",
     "Oui ? Il va pleuvoir demain... Autre chose ? ",
     ];
 
@@ -117,6 +120,8 @@ function GrandPyBotEureka () {
     "Je peux déjà te dire que c'est à cette adresse : ",
     "Je pense avoir trouvé ce que tu cherches, regarde : ",
     "Je dirais que c'est à cet endroit : ",
+    "Hmmmmmm... Ha oui ! Je me souviens maintenant ! ",
+    "Cela me rappelle quelque chose... Ha oui, voilà : ",
     ];
     var currentEureka = possibleEureka[Math.floor(Math.random()*possibleEureka.length)];
     console.log("Le serveur à choisi : " + currentEureka ); // For debug

@@ -63,5 +63,6 @@ function responseTreatment(data)
     } else {
         displayGrandPyBot(GrandPyBotRandomDontUnderstand());
     }
+    window.scrollTo();
 }
 

@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 # coding: utf-8
 
-import pytest
 import requests_mock
 
 from app_pybot.request_tools.google_request import GMapsRequest
@@ -18,7 +17,7 @@ def test_empty():
         assert empty.get_coord() == ""
 
 
-def test_eiffel():
+def test_eiffel_coord():
     """Test a basic GMapsRequest with a mocked API response
     containing Eiffel Tower coordinates
     """
@@ -31,6 +30,19 @@ def test_eiffel():
             'lat': 48.85837009999999,
             'lng': 2.2944813
         }
+
+
+def test_eiffel_address():
+    """Test a basic GMapsRequest with a mocked API response
+        containing Eiffel Tower coordinates
+        """
+    with requests_mock.Mocker() as m:
+        eiffel = GMapsRequest("GrandPyBot trouve tour eiffel")
+        result = '{"results" : [{"formatted_address": "Champ de Mars,' \
+                 ' 5 Avenue Anatole France, 75007 Paris, France"}]}'
+        m.get(eiffel.url, text=result)
+        assert eiffel.get_address() == "Champ de Mars, 5 Avenue Anatole " \
+                                       "France, 75007 Paris, France"
 
 
 '''
