@@ -42,12 +42,6 @@ html, body {
     margin: auto;
 }
 
-#ajax-loader {
-    width: 50%;
-    height: 20px;
-    margin: auto;
-}
-
 #chatwindow {
     min-height: 100px;
     text-align: justify;
@@ -108,4 +102,11 @@ img {
     margin-top: 1%;
     margin-bottom: 12px;
     float: right;
+}
+
+.loader-img {
+    display: block;
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
 }
