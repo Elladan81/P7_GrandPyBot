@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    scroll-method: smooth;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -31,7 +31,6 @@ html, body {
 }
 
 .content-inside {
-    margin: auto;
     margin-bottom : 50px;
 }
 
@@ -47,10 +46,7 @@ html, body {
 
 
 /*chat zone*/
-.user_query {
-    width: 75%;
-    height: 50px;
-}
+
 .map {
     width: 75%;
     height: 250px;
