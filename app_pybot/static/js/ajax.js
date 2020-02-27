@@ -31,6 +31,7 @@ function ajaxPost(url, data, callback)
 // prepare and send ajax 'POST' request
 {
     displayLoader();
+    window.scrollBy(0,document.body.scrollHeight);
     var req = new XMLHttpRequest();
     req.open('POST', url);
     req.addEventListener('load', function() {

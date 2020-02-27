@@ -24,37 +24,45 @@
 
 <!-- /// HEADER : Logo, Title and Headline /// -->
 <header class="header">
-    <div class="row">
+    <div class="container-fluid">
         <!-- Title and Headline -->
-        <div class="container-fluid">
-                <h1 id="title">
-                    <span class="align-middle">GrandPyBot</span>
-                </h1>
+        <div class="row">
+            <h1 id="title">
+                <span class="align-middle">GrandPyBot</span>
+            </h1>
         </div>
+    </div>
     </div>
 </header>
 
 <section class="explanation">
-    <div class="row">
-        <div class="container text-center">
-            <h3 id="headline">GrandPyBot, le vieux robot qui sait tout.</h3>
-            <h6>Enfin presque...</h6>
-                <p>Vous révez d'en apprendre plus sur des lieux que vous aimez ?<br/>
-                    Génial ! GrandPyBot se fera un plaisir de vous raconter une histoire !</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="text-center">
+                    <h3 id=" headline">
+                        GrandPyBot, le vieux robot qui sait tout.</h3>
+                    <h6>Enfin presque...</h6>
+                    <p>Vous révez d'en apprendre plus sur des lieux que vous
+                        aimez
+                        ?<br/>
+                        Génial ! GrandPyBot se fera un plaisir de vous raconter
+                        une
+                        histoire !</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="grandpybot-chat">
-    <div class="row">
-        <div class="container">
-            <div class="content-inside">
-                <!-- /// CHAT ZONE -->
-                <div id="content">
-
-                    <!-- // Chat window and Input zone // -->
-                    <section id="chatzone">
-
+    <!-- /// CHAT ZONE -->
+    <div class="container">
+        <!-- // Chat window and Input zone // -->
+        <section id="chatzone">
+            <div class="container">
+                <div class="row h-100 justify-content-center align-items-center">
+                    <div class="col-sm">
                         <!-- Chat window -->
                         <div id="chatwindow">
                             <div id="chatstart" class="GrandPyBot">
@@ -66,31 +74,44 @@
                                     sur
                                     un lieu, c'est ici ! <br/>J'espère avoir
                                     l'occasion
-                                    de te raconter quelques anecdotes ! Haha !
+                                    de te raconter quelques anecdotes ! Haha
+                                    !
                                 </p>
                             </div>
                         </div>
-
-                        <!-- Input zone -->
-                        <div id="chatform">
-                            <div class="form-inline">
-                                <input id="user_query"
-                                       class="form-control mb-2 mr-sm-2"
-                                       type="text" size="100"
-                                       placeholder="Ex :Dis-moi GrandPyBot, où se situe la tour Effeil ?"
-                                       autofocus>
-                                <input id="submit"
-                                       class="btn btn-primary mb-2"
-                                       type="button" value="Valider">
-                            </div>
-                        </div>
-                    </section>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="inputzone">
+            <!-- Input zone -->
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-10 col-md-8 col-lg-6">
+                        <div id="chatform">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <input id="user_query"
+                                           class="form-control mb-2 mr-sm-2"
+                                           type="text"
+                                           placeholder="Ex :Dis-moi GrandPyBot, où se situe la tour Effeil ?"
+                                           autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="btn btn-primary mb-2"
+                                           id="submit"
+                                           type="button"
+                                           value="Valider">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </section>
-<!-- /// FOOTER /// -->
+
 <footer class="footer">
     <div class="row">
         <div class="container-fluid">
