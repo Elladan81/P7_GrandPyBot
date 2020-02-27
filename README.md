@@ -1,4 +1,4 @@
-###### **Openclassrooms Projet 7 :**
+##### ****Openclassrooms Projet 7 :****
 
 This repository contains the Python / JavaScript / HTML 5 / CSS 3 scripts and additionnal 
 files of my 7th project for the Python Developer Path in OpenClassrooms.
@@ -20,6 +20,20 @@ informations about a location, provided by Google Maps and Wikipedia
 This project needs a valid Google API key to use the Geocoding API and the Maps JavaScript API.
 
 The application access to this key as an environment variable in the /app/tools/credentials.py script.
+
+**Who to install ?**
+
+Fork the project
+
+Create new venv with python
+
+Pull Files
+
+Install requirements.txt
+
+In terminal, execute $pytest
+
+In terminal, execute $python run.py
 
 
 
