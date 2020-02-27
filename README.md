@@ -19,7 +19,7 @@ informations about a location, provided by Google Maps and Wikipedia
 
 This project needs a valid Google API key to use the Geocoding API and the Maps JavaScript API.
 
-The application access to this key as an environment variable in the /app/tools/credentials.py script.
+The application access to this key as an environment variable in the /app_pybot/requests_tools/apikey.py script.
 
 **Who to install ?**
 
