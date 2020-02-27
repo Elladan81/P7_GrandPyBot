@@ -6,6 +6,7 @@ from flask import json
 from app_pybot import app
 
 
+# test with Gmaps JSON dev site example
 class TestViews:
 
     def test_ajax_request(self):
@@ -97,4 +98,3 @@ class TestViews:
                                   "gogolplex valant 10gogol = 1010100. " \
                                   "Le Googleplex est l'un des 23 sites " \
                                   "nord-américains de la firme."
-

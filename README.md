@@ -1,4 +1,4 @@
-##### ****Openclassrooms Projet 7 :****
+**Openclassrooms Projet 7 :**
 
 This repository contains the Python / JavaScript / HTML 5 / CSS 3 scripts and additionnal 
 files of my 7th project for the Python Developer Path in OpenClassrooms.
@@ -35,9 +35,7 @@ In terminal, execute $pytest
 
 In terminal, execute $python run.py
 
-
-
-###### **Description du projet via le site OpenClassrooms :**
+**Description du projet via le site OpenClassrooms :**
 
 Ah, les grands-pères... Je ne sais pas vous, mais le mien connaissait quantité d'histoires.
  Il me suffisait de lui dire un mot pour le voir parti pendant des heures. "Tu veux l'adresse de la poste ? Ah oui, c'est bien. Mais je t'ai déjà raconté que j'ai aidé à la construire ? C'était en 1974 et..." 😴

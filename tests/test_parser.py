@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 # coding: utf-8
 
-
 from app_pybot.request_tools.parser import Parser
 
 
@@ -27,7 +26,7 @@ class TestParser:
         """Test the parser with a sentence to transform in lowercase
         """
         assert self.ps.clean(
-            "Situe Maisons-Laffitte"
+            "Situe MaisOns-LaffiTte"
         ) == "situe maisons-laffitte"
 
     def test_clean_stopwords(self):
