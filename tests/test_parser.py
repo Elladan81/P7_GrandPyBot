@@ -5,8 +5,7 @@ from app_pybot.request_tools.parser import Parser
 
 
 class TestParser:
-    """This class test GrandPy Bot Parser
-    """
+    """This class test GrandPy Bot Parser"""
 
     def setup(self):
         self.ps = Parser()

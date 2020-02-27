@@ -14,10 +14,9 @@ html, body {
 }
 
 .explanation {
-    height: 160px;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .content-inside {
