@@ -5,7 +5,7 @@ html, body {
 }
 
 .header {
-    height: 8vh;
+    height: 80px;
     background-color: #0A5698;
     color:#fff;
     width: 100%;
@@ -16,7 +16,8 @@ html, body {
 .explanation {
     height: 160px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .content-inside {
@@ -40,11 +41,6 @@ html, body {
     width: 75%;
     height: 250px;
     margin: auto;
-}
-
-#chatwindow {
-    min-height: 100px;
-    text-align: justify;
 }
 
 .user {
