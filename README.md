@@ -1,4 +1,4 @@
-##### ****Openclassrooms Projet 7 :****
+##### **Openclassrooms Projet 7 :**
 
 This repository contains the Python / JavaScript / HTML 5 / CSS 3 scripts and additionnal 
 files of my 7th project for the Python Developer Path in OpenClassrooms.
@@ -34,8 +34,6 @@ Install requirements.txt
 In terminal, execute $pytest
 
 In terminal, execute $python run.py
-
-
 
 ###### **Description du projet via le site OpenClassrooms :**
 

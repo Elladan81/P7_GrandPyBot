@@ -35,7 +35,7 @@ def ajax_request():
     coord = gmaps_request.get_coord()
     print("Coordonnées GMaps =", coord)  # FOR DEBUG
     formatted_address = gmaps_request.get_address()
-    print("Formatted address =", formatted_address)
+    print("Formatted address =", formatted_address) # FOR DEBUG
 
     if coord:
         # to refactor

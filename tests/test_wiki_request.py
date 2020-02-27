@@ -41,7 +41,7 @@ class TestWikiRequest:
         assert self.eiffel.get_page_id() == 4641538
 
     def test_get_extract(self):
-        assert self.empty.get_extract() == ""      
+        assert self.empty.get_extract() == ""
         assert self.eiffel.get_extract() == "Le Jules Verne \
 est un restaurant parisien situé au deuxième étage de la Tour Eiffel \
 et spécialisé en cuisine française classique."
